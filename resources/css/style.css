@@ -1,0 +1,188 @@
+html {
+  font-size: 18px;
+  font-family: helvetica;
+}
+
+div {
+  display: block;
+  width: 100%
+}
+
+header .top-line {
+  background-color: black;
+  color: white;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+nav {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0px;
+  list-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+.top-line img {
+  padding-right: 20px;
+  height: 1.5em;
+}
+
+.top-line .content {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px .5em;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.banner {
+  background-image: url("../pictures/main-banner.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+}
+
+.new-arrival {
+  background-color: black;
+  color: white;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px 0px;
+}
+
+.product {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.product-image img {
+  max-width: 8em
+}
+
+.product-image {
+    height: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: initial;
+    padding: 2em 0px;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: .5em;
+}
+
+.info {
+  width: 35%;
+}
+
+.title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  nav .content {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .new-arrival {
+    width: 100%;
+    top: 18.1em;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .product, .info {
+    width: 90%;
+  }
+
+  .info {
+    margin: .5em auto;
+  }
+
+  .products, .details {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: .77rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
